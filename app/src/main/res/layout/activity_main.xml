@@ -24,7 +24,7 @@
                 android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tokyo, JPN"
+                android:text="Tokyo"
                 android:textColor="#FFFFFF"
                 android:textSize="24dp" />
 
@@ -35,6 +35,12 @@
                 android:text="20 April 2012, 20:08 PM"
                 android:textColor="#FFFFFF"
                 android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/textInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="city name" />
         </LinearLayout>
 
 
@@ -343,6 +349,28 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="128dp"
+            android:layout_above="@+id/overviewContainer"
+            android:layout_below="@+id/addressContainer"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="search"
+            android:text="Search" />
+
     </RelativeLayout>
 
 
